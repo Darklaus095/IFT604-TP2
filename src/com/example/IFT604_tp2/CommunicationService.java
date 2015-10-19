@@ -42,7 +42,7 @@ public class CommunicationService extends Service {
             @Override
             public void run() {
                 try {
-                    InetAddress serverAddress = InetAddress.getByName("192.168.0.130");
+                    InetAddress serverAddress = InetAddress.getByName("10.0.0.232");
                     client = new Client(serverAddress);
                     client.Start();
                 } catch (Exception e) {
